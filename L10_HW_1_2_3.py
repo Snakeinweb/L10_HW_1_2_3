@@ -1,36 +1,35 @@
-﻿#
+﻿# a=int(input())
+# str_a=str(a)
+# s=len(str_a)
+# print(str_a[s-1])
 
-# print('Здравствуйте')
+b ="Вид питомца"
+c ="Возраст питомца"
+d ="Имя владельца"
 
-prif = 'лет'
+pets={}
 
-who_animal = input('Кто ваш питомец? ')
+name_owner = input("Имя хозяина питомца: ")
+name_pets = input("Как зовут питомца?: ")
+who_pets = input("Кто ваш питомец?: ")
+age_pets = int(input("Сколько лет питомцу?: "))
 
-name = input('Имя вашего питомца? ')
-
-age = int(input('Возраст вашего питомца? '))
-
-# в дальнейшем можно обработать до других "лет"
-
-if age == 1:
-
-    prif = 'год'
-
+str_age_pets = str(age_pets)
+s = len(str_age_pets)
+s_last = int(str_age_pets[s-1])
+if s_last == 2 or 3 or 4 and age_pets != 12 or 13 or 14:
+    f_age = "года"
+elif s_last == 1 and age_pets != 11:
+    f_age = "год"
 else:
-
-    if age >= 2 and age <= 4:
-
-        prif = 'года'
-
-print('Это',who_animal,'по кличке "'+name+'". Возраст:',age,prif)
-
-pets = {}
-#n = int(input('Введите колличество питомцев вводимых в базу: '))
-#for i in range(n):
-name = input ("Введите кличку питомца: ")
-pets[name] = 0
-
-
-print (pets)
+    f_age = "лет"
+pets = {
+    name_pets : {
+        b : who_pets,
+        c : age_pets,
+        d : name_owner
+        }
+        }
+print ("Это", who_pets, "по кличке", name_pets + ". Возраст:", age_pets, f_age)
 
 
