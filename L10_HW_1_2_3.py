@@ -58,7 +58,7 @@ pets = {
         }
         }
 
-print ("Это", who_pets, "по кличке", name_pets + ". Возраст:", age_pets, f_age)
+print ('Это', who_pets, 'по кличке', '"'+name_pets+'"'+'. Возраст:', age_pets, f_age)
 print (pets)
 
 print (f' Это {pets[name_pets][b]} по кличке {pets[name_pets]}. Возраст: {pets[name_pets][c]} {f_age}. Имя владельца: {pets[name_pets][d]}')
