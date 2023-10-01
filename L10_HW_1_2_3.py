@@ -1,10 +1,3 @@
-﻿# a=int(input())
-# str_a=str(a)
-# s=len(str_a)
-# print(str_a[s-1])
-
-from typing import KeysView
-
 
 b ="Вид питомца"
 c ="Возраст питомца"
@@ -58,11 +51,4 @@ pets = {
         }
         }
 
-print ('Это', who_pets, 'по кличке', '"'+name_pets+'"'+'. Возраст:', age_pets, f_age)
-print (pets)
-
-print (f' Это {pets[name_pets][b]} по кличке {pets[name_pets]}. Возраст: {pets[name_pets][c]} {f_age}. Имя владельца: {pets[name_pets][d]}')
-
-# Это желторотый питон по кличке "Каа". Возраст питомца: 19 лет. Имя владельца: Саша
-
-print (f' Это {pets[name_pets][b]} по кличке {pets[name_pets]}. Возраст: {pets[name_pets][c]} {f_age}. Имя владельца: {pets[name_pets][d]}')
+print (f' Это {pets[name_pets][b]} по кличке "{list(pets.keys())[0]}". Возраст: {pets[name_pets][c]} {f_age}. Имя владельца: {pets[name_pets][d]}')
